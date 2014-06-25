@@ -1,0 +1,92 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "filter";
+@import "bootstrap";
+
+#header {
+  margin-top: 15px;
+  img {
+    padding: 10px;
+  }
+  .navbar-default  {
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    li {
+      > a {
+      color: #b8b1d9;
+      }
+      a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+      }
+    }
+    li.active > a {
+      color: #333;
+      background-color: rgba(240, 240, 240, 0.8);
+      border-radius: 4px;
+    }
+  }
+  nav {
+    margin-top: 20px;
+  }
+}
+
+.jumbotron-ab {
+  background: url(../images/ab-site.jpg) center center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  //@include filter(blur, 10px);
+  margin-top: -138px;
+  .teaser {
+    clear: both;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  h1 {
+    color: #b8b1d9;
+    font-size: 55px;
+  }
+  h2 {
+    color: #b8b1d9;
+  }
+}
+
+
+#content {
+  a.list-group-item {
+    height: 6.5em;
+    .list-group-item-heading {
+      color: #3071A9;
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 9px;
+    }
+  }
+  .content-bottom,
+  .content-top {
+    @extend .row;
+  }
+
+  .reasons {
+    @extend .col-md-8;
+    @extend .col-sm-1;
+  }
+
+  .calltoaction,
+  .news,
+  .social-links,
+  .important-dates {
+    @extend .col-md-4;
+    @extend .col-sm-1;
+  }
+}
+
+
+
+#footer {
+  min-height: 300px;
+  background-color: #333;
+  width: 100%;
+}
