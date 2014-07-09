@@ -17,6 +17,12 @@ run lambda { |env|
   if File.exists?(file)
     status = 200
     content = File.open(file, File::RDONLY)
+  elsif file == 'pull-origin'
+    %x(echo "`date -R` - IP: #{env["REMOTE_ADDR"]}" >> git.log)
+    message = %x(git pull origin master)
+    %x(echo "#{message}" >> git.log)
+    status = 200
+    content = ["Git-Pull realizado com sucesso.<br /><br />Mensagem de retorno: <br />#{message}"]
   end
 
   [ status, headers, content ]
