@@ -20,6 +20,9 @@ GEM
       lumberjack (~> 1.0)
       pry (>= 0.9.12)
       thor (>= 0.18.1)
+    guard-compass (1.1.0)
+      compass (>= 0.10.5)
+      guard (~> 2.0)
     guard-rack (1.4.0)
       ffi
       guard
@@ -56,5 +59,6 @@ DEPENDENCIES
   bootstrap-sass
   compass
   guard
+  guard-compass
   guard-rack
   rack
