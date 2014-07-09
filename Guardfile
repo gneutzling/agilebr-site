@@ -12,9 +12,9 @@
 # Like usual, the Compass configuration path are relative to the :project_path
 
 # guard 'compass', project_path: 'not_current_dir', configuration_file: 'path/to/my/compass_config.rb'
-guard :compass
+guard :compass, compile_on_start: true
 
-guard 'rack' do
+guard :rack do
   watch('Gemfile.lock')
   watch(%r{^(config|lib|app)/.*})
 end
