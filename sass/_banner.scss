@@ -1,0 +1,30 @@
+.jumbotron-ab {
+  background: url(../images/bg-floripa.jpg) center center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  //@include filter(blur, 10px);
+  .teaser {
+    clear: both;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 55px;
+  }
+  h2 {
+    color: #fff;
+  }
+}
+
+
+.page-title-wrapper {
+  background: #D9EDF7;
+  color: #3A87AD;
+  height: 80px;
+  text-transform: uppercase;
+  h1 {
+    font-size: 2em;
+  }
+}
