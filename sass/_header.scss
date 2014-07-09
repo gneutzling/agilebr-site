@@ -1,0 +1,28 @@
+#header {
+  margin-top: 15px;
+  img {
+    padding: 10px;
+  }
+  .navbar-default  {
+    padding: 5px 0;
+    border: none;
+    background-color: transparent;
+    li {
+      > a {
+
+      }
+      a:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 4px;
+      }
+    }
+    li.active > a {
+      color: #333;
+      background-color: rgba(240, 240, 240, 0.8);
+      border-radius: 4px;
+    }
+  }
+  nav {
+    margin-top: 20px;
+  }
+}
