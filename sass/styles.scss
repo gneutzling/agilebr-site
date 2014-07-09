@@ -3,58 +3,13 @@
 @import "filter";
 @import "bootstrap";
 
+// site blocks
 @import "header";
+@import "sidebar";
+@import "banner";
+@import "home-content";
+@import "motives";
+@import "sponsors";
+@import "calltoaction";
+@import "footer";
 
-.jumbotron-ab {
-  background: url(../images/ab-site.jpg) center center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  //@include filter(blur, 10px);
-  .teaser {
-    clear: both;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  h1 {
-    color: #b8b1d9;
-    font-size: 55px;
-  }
-  h2 {
-    color: #b8b1d9;
-  }
-}
-
-
-#content {
-  .list-group {
-    @extend .col-md-3,
-  }
-  .content-bottom,
-  .content-top {
-    @extend .row;
-  }
-
-  .reasons {
-    // @extend .col-md-8;
-    // @extend .col-sm-1;
-  }
-
-  .calltoaction .block {
-    @extend .col-md-4,
-  }
-  .news,
-  .social-links,
-  .important-dates {
-    @extend .col-md-4;
-    @extend .col-sm-1;
-  }
-}
-
-
-
-#footer {
-  min-height: 300px;
-  background-color: #333;
-  width: 100%;
-}

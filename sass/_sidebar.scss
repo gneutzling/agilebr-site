@@ -1,0 +1,24 @@
+.sidebar {
+  @extend .col-md-4;
+  @extend .col-sm-1;
+  .post {
+    h2 {
+      margin-top: 5px;
+      line-height: 1.2em;
+      font-size: 1em;
+      a {
+        color: #468850;
+      }
+    }
+  }
+}
+
+.content {
+  @extend .col-md-8;
+  @extend .col-sm-1;
+}
+
+
+.home .sidebar {
+  @extend .col-md-6;
+}

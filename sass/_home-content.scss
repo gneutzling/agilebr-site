@@ -1,0 +1,18 @@
+.news {
+  h2 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  @extend .col-md-6;
+}
+
+.social-links {
+
+}
+
+.important-dates {
+  dd {
+    border-bottom: 1px solid #333;
+  }
+
+}

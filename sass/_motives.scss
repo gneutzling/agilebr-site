@@ -1,0 +1,20 @@
+.motives {
+  @extend .row;
+  padding: 15px 0 40px 0;
+  .group {
+    @extend .col-md-3;
+    a {
+      color: #4A4A4A;
+    }
+    .description {
+      padding-left: 5px;
+      padding-right: 0;
+      font-size: 1.2em;
+      @extend .col-md-9;
+    }
+    i {
+      padding-top: 15px;
+      @extend .col-md-3;
+    }
+  }
+}

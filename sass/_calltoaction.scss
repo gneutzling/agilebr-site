@@ -1,0 +1,19 @@
+.calltoaction {
+  @extend .row;
+  background-color: #D9EDF7;
+  padding: 50px 0 50px 0;
+  margin-bottom: 50px;
+  .block {
+    @extend .col-md-4;
+    i {
+      color: #4A4A4A;
+    }
+    h3 {
+      color: #3A87AD;
+    }
+    p.description {
+      color: #4A4A4A;
+      margin-bottom: 15px;
+    }
+  }
+}
