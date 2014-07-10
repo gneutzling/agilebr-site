@@ -19,10 +19,16 @@ run lambda { |env|
     content = File.open(file, File::RDONLY)
   elsif file == 'pull-origin'
     %x(echo "`date -R` - IP: #{env["REMOTE_ADDR"]}" >> git.log)
-    message = %x(git pull origin master)
-    %x(echo "#{message}" >> git.log)
+
+    message = ""
+    ["git pull origin master", "compass compile --force --boring"].each do |command|
+      temp = %x(#{command})
+      %x(echo "#{temp}" >> git.log)
+      message << "<br />" + temp
+    end
+
     status = 200
-    content = ["Git-Pull realizado com sucesso.<br /><br />Mensagem de retorno: <br />#{message}"]
+    content = ["Git-Pull realizado com sucesso.<br /><br />Mensagem de retorno: #{message}"]
   end
 
   [ status, headers, content ]
