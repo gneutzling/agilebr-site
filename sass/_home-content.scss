@@ -1,9 +1,23 @@
 .news {
+  @extend .col-md-6;
+  .post {
+    margin-bottom: 30px;
+  }
   h2 {
     font-size: 1.4em;
     line-height: 1.4em;
+    margin: 0 0 5px 0;
+    a {
+        color: #468850;
+    }
   }
-  @extend .col-md-6;
+  .post-info {
+    margin-bottom: 0;
+  }
+  .date {
+    font-weight: bold;
+    color: #A6AEB4
+  }
 }
 
 .social-links {
