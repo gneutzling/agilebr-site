@@ -5,8 +5,15 @@
   margin-bottom: 50px;
   .block {
     @extend .col-md-4;
-    i {
-      color: #4A4A4A;
+
+    i.volunteer {
+      color: #468851;
+    }
+    i.virada {
+      color: #3A87AD;
+    }
+    i.wbma {
+      color: #F5A623;
     }
     h3 {
       color: #3A87AD;
