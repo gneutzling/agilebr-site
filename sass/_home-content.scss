@@ -1,7 +1,13 @@
+.content-wrapper {
+  padding: 0 0 50px 0;
+}
+
 .news {
   @extend .col-md-6;
   .post {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
   }
   h2 {
     font-size: 1.4em;
@@ -20,13 +26,30 @@
   }
 }
 
-.social-links {
-
+.home-sidebar {
+  @extend .col-md-6;
 }
 
 .important-dates {
-  dd {
-    border-bottom: 1px solid #333;
+  .dl-horizontal {
+    padding: 15px 0;
   }
-
+  dd {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 5px 0;
+    margin-left: 0;
+  }
+  dt {
+    padding: 5px 0;
+    width: 130px;
+    text-align: center;
+  }
 }
+
+.social-links {
+  i {
+    padding: 20px;
+    font-size: 5em;
+  }
+}
+
