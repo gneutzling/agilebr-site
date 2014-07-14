@@ -32,6 +32,8 @@
 }
 
 .important-dates {
+  @extend .col-sm-7;
+  @extend .col-md-12;
   .dl-horizontal {
     padding: 15px 0;
   }
@@ -41,16 +43,21 @@
     margin-left: 0;
   }
   dt {
-    padding: 5px 0;
-    width: 130px;
-    text-align: center;
+    padding-top: 10px;
+    @media (min-width: 768px) {
+      padding: 5px 0;
+      width: 130px;
+      text-align: center;
+    }
   }
 }
 
 .social-links {
+  @extend .col-sm-5;
+  @extend .col-md-12;
   i {
-    padding: 20px;
-    font-size: 5em;
+    padding: 10px;
+    font-size: 4em;
   }
 }
 

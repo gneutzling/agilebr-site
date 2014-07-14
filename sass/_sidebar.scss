@@ -1,6 +1,5 @@
 .sidebar {
   @extend .col-md-4;
-  @extend .col-sm-1;
   .post {
     h2 {
       margin-top: 5px;
@@ -15,7 +14,6 @@
 
 .content {
   @extend .col-md-8;
-  @extend .col-sm-1;
 }
 
 
