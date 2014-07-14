@@ -2,7 +2,6 @@
   @extend .row;
   background: url(../images/bg-floripa.jpg) center center;
   background-size: cover;
-  height: 350px;
   //@include filter(blur, 10px);
   .teaser {
     clear: both;
@@ -15,6 +14,9 @@
   }
   h2 {
     color: #fff;
+  }
+  .btn {
+    margin-top: 1.5em;
   }
 }
 
