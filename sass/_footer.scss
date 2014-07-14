@@ -1,5 +1,21 @@
 #footer {
-  min-height: 300px;
+  @extend .row;
+  padding: 20px 0 0 0;
   background-color: #333;
-  width: 100%;
+  iframe {
+    height: 300px;
+  }
+  h3 {
+    color: #fff;
+  }
+  li a {
+    color: #9B9B9B;
+  }
+  .copyright {
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #222;
+    height: 40px;
+    color: #ddd;
+  }
 }

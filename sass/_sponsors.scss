@@ -1,7 +1,23 @@
 #sponsors {
+  @extend .row;
   padding: 50px 0;
   background-color: #F6F6F6;
   .well {
     background-color: #FFFFFF;
   }
+  .sponsor {
+    @extend .col-md-4;
+    margin-top: 15px;
+    line-height:150px;
+    img {
+      height: 150px;
+    }
+  }
+  .rbs {
+    img {
+      height: auto;
+      width: 260px;
+    }
+  }
+
 }
