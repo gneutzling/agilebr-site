@@ -1,10 +1,10 @@
 .calltoaction {
   @extend .row;
   background-color: #D9EDF7;
-  padding: 50px 0 50px 0;
   margin-bottom: 50px;
   .block {
     @extend .col-md-4;
+    margin: 50px 0;
 
     i.volunteer {
       color: #468851;
