@@ -1,0 +1,21 @@
+@import "compass/css3/border-radius";
+
+.speakers {
+  background-color: #DDD;
+  padding: 50px 0;
+}
+.speaker {
+  @extend .col-md-6;
+  .image {
+    @extend .col-md-5;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .content {
+    @extend .col-md-7;
+  }
+  img {
+    @extend .img-circle;
+    border: 10px solid #FFF;
+  }
+}
