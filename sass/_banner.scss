@@ -1,6 +1,6 @@
 .jumbotron-ab {
   @extend .row;
-  background: url(../images/bg-floripa.jpg) center center;
+  background: url(../images/bg-floripa.jpg) center center no-repeat;
   background-size: cover;
   //@include filter(blur, 10px);
   .teaser {
